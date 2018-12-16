@@ -1,5 +1,5 @@
 body{
- margin: 0px;
+ margin: 0%;
 }
 .header-main{
  padding-right: 30px;
@@ -10,22 +10,28 @@ body{
  text-decoration: none;
  color: black;
  text-transform: uppercase;
- font-size: 15px;
+ font-size: 90%;
 }
 .header_choose ul{
-  margin-left: 730px;
-  margin-top: -50px;
+  margin-left: 45%;
+  margin-top: -5%;
   display: flex;
   list-style: none;
 }
 .header_choose li{
- margin-left: 35px;
-
+ margin-left: 8%;
+ border : 1px solid white;
+ border-radius: 20px;
+ padding:1%;
 }
 .header_text {
-  padding-right: 30px;
-  padding-left: 30px;
-  padding-top: 20px;
+  padding-right: 4%;
+  padding-left: 4%;
+  padding-top: 2%;
+}
+.reg {
+  background: #808080;
+  padding: 2px;
 }
 header{
  background-color: white;
@@ -33,4 +39,64 @@ header{
  height: 750px;
     z-index: 0;
     color: black;
+}
+
+* {box-sizing:border-box}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
