@@ -24,3 +24,9 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+var audio = new Audio("engine-sound.mp3");
+function engine() {
+  audio.pause();
+  audio.load();
+  audio.play();
+}
